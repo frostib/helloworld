@@ -22,7 +22,7 @@
         <div class="form-group">
           <input type="text" class="form-control" name="b" id="b" placeholder="Tala 2">
         </div>
-        <button type="submit" class="btn btn-default">Sign in</button>
+        <button type="submit" class="btn btn-default">Spila!</button>
       </form>
       <hr>
       <div id="results">
@@ -44,7 +44,7 @@
           url: form.attr('action'),
           data: 'a=' + a + '&b=' + b
         }).done(function(sum) {
-          $('#results').html(a + ' + ' + b + ' = ' + sum).attr('class', 'alert alert-success');
+          $('#results').html(a + ' + ' + b + ' = ' + sum + '. Þetta hjálpar þér ekkert í myllu...').attr('class', 'alert alert-success');
         }).fail(function() {
           $('#results').html('Villa kom upp við að leggja saman "' + a + ' + ' + b + '"').attr('class', 'alert alert-danger');
         });
